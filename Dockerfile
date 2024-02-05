@@ -30,7 +30,7 @@ USER doh-proxy
 
 ENV LISTEN=0.0.0.0:8080
 ENV RESOLVER=9.9.9.9:53
-
+EXPOSE 8080
 # RUN /usr/local/bin/doh-proxy --version
 
 CMD ["sh", "-c", "/usr/local/bin/doh-proxy --listen-address $LISTEN --server-address $RESOLVER"]
